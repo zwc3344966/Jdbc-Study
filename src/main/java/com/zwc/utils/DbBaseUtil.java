@@ -21,6 +21,7 @@ public class DbBaseUtil {
 
     static {
         try {
+            // 使用类加载器获取输入流
             InputStream in = DbBaseUtil.class.getClassLoader().getResourceAsStream("db.properties");
             Properties prop = new Properties();
             prop.load(in);
